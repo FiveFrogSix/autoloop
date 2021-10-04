@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoLoop By FiveFrogSix</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="col bg-dark text-light text-end  ">
+        <a href="https://github.com/FiveFrogSix" target="_blank" class="btn link-light shadow-none">
+            <i class="fab fa-github"></i>
+            <span class="">
+               FiveFrogSix
+            </span>
+        </a>
+    </div>
+    <div class="container">
+   
+        <div class="col text-center my-3">
+            <h2 class="fw-bold">
+                Auto<span class="text-danger">Loop</span>
+            </h2>
+        </div>
+        <div class="col text-end d-flex justify-content-center">
+            <button id="playLoop" class="btn btn-success shadow-none rounded-pill me-2" aria-label="ปุ่มเล่น" disabled>
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="pauseLoop" class="btn btn-danger shadow-none rounded-pill  me-2"   aria-label="ปุ่มหยุด">
+                <i class="fas fa-pause"></i>
+            </button>
+            <input id="timeDelay" type="number" class="form-control shadow-none  text-center" aria-label="หน่วงเวลา" aria-allowed-attr style="width:80px;" placeholder="หน่วงเวลา" value="1" disabled>
+            <span class="my-auto fw-bold ms-2">วินาที</span>
+        </div>
+        <div id="show_meals" class="row row-cols-2 row-cols-md-3  row-cols-lg-4 m-0 gy-4">
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="DetailMealsMD" tabindex="-1" aria-labelledby="DetailMealsMDLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content border-0 bg-transparent">
+                <div id="DetailMealsMDBody" class="modal-body ">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+<script src="js/script.js"></script>
+</html>
